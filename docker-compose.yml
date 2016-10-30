@@ -1,0 +1,25 @@
+
+node4:
+   build: node4
+   restart: always
+   ports:
+     - "8080:8080"
+   links:
+     - redis:redis
+   environment:
+     PORT: 8080:8080
+     REDIS_HOST: redis
+     REDIS_PORT: 6379
+   command: bash -c "npm start"
+
+redis:
+   image: redis:latest
+   restart: always
+   volumes:
+     - "/data"
+   expose:
+     - "6379"
+   ports:
+     - "6379:6379"
+
+

@@ -1,0 +1,17 @@
+{
+  "name": "docker_web_app",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "Mathew Thomas <mathew.thomas@longdivision.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+     "redis": "~2.6.2",
+     "socket.io": "~1.5.1",
+     "cors": "^2.8.1",
+    "express": "^4.13.3"
+  }
+}
+
