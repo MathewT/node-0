@@ -9,6 +9,8 @@ const PORT = 8080;
 
 // App
 const app = express();
+var router = express.Router();
+
 app.get('/', function (req, res) {
   console.log("hello world");
   res.send('Hello world\n');
